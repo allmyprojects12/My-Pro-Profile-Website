@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>خطأ 404 | علي الشيخ</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        /* استخدام نفس متغيرات وألوان موقعك */
+        :root {
+            --bg-color: #050810;
+            --primary-color: #0062ff;
+            --accent-color: #00d2ff;
+            --text-color: #ffffff;
+            --muted-color: #cbd5e1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            overflow: hidden;
+            background: radial-gradient(circle at top right, #001f4d, var(--bg-color));
+        }
+
+        .error-container {
+            padding: 40px;
+            background-color: rgba(15, 23, 42, 0.6);
+            border-radius: 20px;
+            border: 1px solid #1e293b;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(10px);
+            max-width: 500px;
+            width: 90%;
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        h1 {
+            font-size: 120px;
+            color: var(--accent-color);
+            margin: 0;
+            line-height: 1;
+            text-shadow: 0 0 30px rgba(0, 210, 255, 0.4);
+            font-weight: 900;
+            animation: pulse 2s infinite alternate;
+        }
+
+        @keyframes pulse {
+            from { text-shadow: 0 0 20px rgba(0, 210, 255, 0.2); }
+            to { text-shadow: 0 0 40px rgba(0, 210, 255, 0.6); }
+        }
+
+        h2 {
+            font-size: 28px;
+            margin: 15px 0 10px;
+            color: var(--text-color);
+        }
+
+        p {
+            font-size: 18px;
+            color: var(--muted-color);
+            margin-bottom: 30px;
+        }
+
+        .btn-group {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        /* نفس تصميم الأزرار في style.css */
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 25px;
+            background-color: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+            font-size: 16px;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-color);
+            transform: translateY(-5px);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent-color);
+            background-color: rgba(0, 98, 255, 0.1);
+        }
+
+        @media (max-width: 480px) {
+            h1 { font-size: 90px; }
+            h2 { font-size: 22px; }
+            p { font-size: 16px; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="error-container">
+        <h1>404</h1>
+        <h2>عذراً، الصفحة غير موجودة!</h2>
+        <p>يبدو أنك وصلت إلى رابط خاطئ أو أن الصفحة تم نقلها.</p>
+        
+        <div class="btn-group">
+            <a href="index.html" class="btn"><i class="fa-solid fa-house"></i> الرئيسية (عربي)</a>
+            <a href="index-en.html" class="btn btn-outline"><i class="fa-solid fa-language"></i> Home (English)</a>
+        </div>
+    </div>
+
+</body>
+</html>
